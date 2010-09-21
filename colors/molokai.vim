@@ -23,7 +23,7 @@ let g:colors_name="molokai"
 if exists("g:molokai_original")
     let s:molokai_original = g:molokai_original
 else
-    let s:molokai_original = 0
+    let s:molokai_original = 1
 endif
 
 
@@ -35,12 +35,12 @@ hi Conditional     guifg=#F92672               gui=bold
 hi Constant        guifg=#AE81FF               gui=bold
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi Debug           guifg=#BCA3A3               gui=bold
-hi Define          guifg=#66D9EF
+hi Define          guifg=#FD971F
 hi Delimiter       guifg=#8F8F8F
-hi DiffAdd                       guibg=#13354A
-hi DiffChange      guifg=#89807D guibg=#4C4745
-hi DiffDelete      guifg=#960050 guibg=#1E0010
-hi DiffText                      guibg=#4C4745 gui=italic,bold
+hi DiffAdd                       guibg=#2F3127
+hi DiffChange      guifg=#89807D guibg=#4E4E40
+hi DiffDelete      guifg=#2F3127 guibg=#2F3127
+hi DiffText                      guibg=#4E4E40 gui=italic,bold
 
 hi Directory       guifg=#A6E22E               gui=bold
 hi Error           guifg=#960050 guibg=#1E0010
@@ -95,6 +95,7 @@ hi Structure       guifg=#66D9EF
 hi Tag             guifg=#F92672               gui=italic
 hi Title           guifg=#ef5939
 hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
+hi! link Todo         YellowR
 
 hi Typedef         guifg=#66D9EF
 hi Type            guifg=#66D9EF               gui=none
@@ -111,8 +112,8 @@ if s:molokai_original == 1
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
    hi CursorColumn                  guibg=#3E3D32
-   hi LineNr          guifg=#BCBCBC guibg=#3B3A32
-   hi NonText         guifg=#BCBCBC guibg=#3B3A32
+   hi LineNr          guifg=#75715E guibg=#3E3D32 gui=none
+   hi NonText         guifg=#75715E guibg=#272822
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#465457
