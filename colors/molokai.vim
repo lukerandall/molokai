@@ -65,8 +65,8 @@ hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
 
 " complete menu
-hi Pmenu           guifg=#66D9EF guibg=#000000
-hi PmenuSel                      guibg=#808080
+hi Pmenu                         guibg=#000000
+hi PmenuSel        guifg=#66D9EF guibg=#222222
 hi PmenuSbar                     guibg=#080808
 hi PmenuThumb      guifg=#66D9EF
 
@@ -116,10 +116,10 @@ if s:molokai_original == 1
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#465457
-   hi CursorLine                    guibg=#293739
+   hi CursorLine                    guibg=#161718
    hi CursorColumn                  guibg=#293739
-   hi LineNr          guifg=#BCBCBC guibg=#232526
-   hi NonText         guifg=#BCBCBC guibg=#232526
+   hi LineNr          guifg=#373738 guibg=#1B1D1E
+   hi NonText         guifg=#292B2B guibg=#1B1D1E
 end
 
 "
